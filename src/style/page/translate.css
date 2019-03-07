@@ -1,0 +1,35 @@
+.translate {
+  background-color: rgba(34, 34, 34, 0.7);
+  border-radius: 5px;
+  padding: 20px 30px;
+  text-align: center; }
+  .translate ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    .translate ul li {
+      color: #FFD600;
+      font-size: 20px;
+      position: relative;
+      cursor: pointer; }
+      .translate ul li:hover span {
+        opacity: 1;
+        z-index: 1; }
+    .translate ul span {
+      position: absolute;
+      top: -10px;
+      background-color: #FFD600;
+      padding: 0 5px;
+      color: #222;
+      border-radius: 5px;
+      box-shadow: -5px 5px 5px 0 #222;
+      opacity: 0;
+      transition: opacity .4s;
+      z-index: -1; }
+  @media (max-width: 700px) {
+    .translate ul li {
+      font-size: 16px;
+      cursor: default;
+      line-height: 30px; } }
+
+/*# sourceMappingURL=translate.css.map */

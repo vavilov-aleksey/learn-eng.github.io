@@ -1,0 +1,24 @@
+.not-page {
+  display: flex;
+  color: #FFD600;
+  background-color: rgba(34, 34, 34, 0.7);
+  padding: 30px;
+  align-items: center; }
+  .not-page h1 {
+    font-size: 120px;
+    margin: 0; }
+  .not-page__error {
+    padding-left: 30px; }
+  .not-page h3 {
+    font-size: 30px; }
+  .not-page p {
+    font-size: 20px; }
+  .not-page a {
+    color: #FFD600; }
+  @media (max-width: 700px) {
+    .not-page {
+      flex-direction: column; }
+      .not-page__error {
+        padding-left: 0; } }
+
+/*# sourceMappingURL=notFound.css.map */

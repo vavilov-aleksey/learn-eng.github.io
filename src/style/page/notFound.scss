@@ -1,0 +1,39 @@
+@import "../variables";
+
+.not-page{
+  display: flex;
+  color: $color-yellow;
+  background-color: rgba($color-dark, 0.7);
+  padding: 30px;
+  align-items: center;
+
+  h1{
+    font-size: 120px;
+    margin: 0;
+  }
+
+  &__error{
+    padding-left: 30px;
+  }
+
+  h3{
+    font-size: 30px;
+  }
+
+  p{
+    font-size: 20px;
+  }
+
+  a{
+    color: $color-yellow;
+  }
+
+  @media (max-width: 700px){
+    flex-direction: column;
+
+    &__error{
+      padding-left: 0;
+    }
+
+  }
+}
