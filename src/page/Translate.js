@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
 import '../style/page/translate.css';
-// import Data from '../learn';
+import {localStorageKey} from "../data";
 
 
 export default class Translate extends Component {
   render() {
-    const Data = JSON.parse(localStorage.getItem('learnEng'));
+    const Data = JSON.parse(localStorage.getItem(localStorageKey));
 
     return (
       <div className='translate'>

@@ -22,9 +22,14 @@
     height: 40px;
     font-size: 20px;
     text-transform: uppercase;
-    cursor: pointer; }
+    cursor: pointer;
+    position: relative; }
     .add__btn:hover {
       background-color: rgba(255, 214, 0, 0.8);
       transition: background-color .7s; }
+    .add__btn span {
+      position: absolute;
+      right: 10px;
+      top: 5px; }
 
 /*# sourceMappingURL=add.css.map */

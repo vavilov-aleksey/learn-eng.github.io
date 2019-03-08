@@ -35,10 +35,17 @@
     font-size: 20px;
     text-transform: uppercase;
     cursor: pointer;
+    position: relative;
 
     &:hover{
       background-color: rgba($color-yellow, 0.8);
       transition: background-color .7s;
+    }
+
+    span{
+      position: absolute;
+      right: 10px;
+      top: 5px;
     }
   }
 }

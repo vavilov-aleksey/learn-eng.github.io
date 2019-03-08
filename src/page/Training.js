@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
+import {localStorageKey} from '../data';
 
 export default class Training extends Component {
   render() {
-    const Data = JSON.parse(localStorage.getItem('learnEng'));
+    const Data = JSON.parse(localStorage.getItem(localStorageKey));
 
     return (
       <div className='translate'>
