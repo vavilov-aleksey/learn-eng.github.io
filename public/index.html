@@ -6,12 +6,17 @@
     <meta name="theme-color" content="#000000">
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
-    <title>React App</title>
+    <title>Learn-Eng</title>
   </head>
   <body>
     <noscript>
       You need to enable JavaScript to run this app.
     </noscript>
+    <script>
+      if(/MSIE 10/i.test(navigator.userAgent) || /rv:11.0/i.test(navigator.userAgent)){
+        alert('Ваш браузер устарел. Сайт может работать не корректно')
+      }
+    </script>
     <div id="root"></div>
   </body>
 </html>
