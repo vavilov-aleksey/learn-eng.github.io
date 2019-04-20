@@ -1,9 +1,9 @@
-import React, {Component} from 'react';
+import React, {PureComponent} from 'react';
 import '../style/page/add.css';
 import {localStorageKey} from '../data';
 import {Form, Field} from 'react-final-form'; //docs https://github.com/final-form/react-final-form
 
-class Add extends Component {
+class Add extends PureComponent {
   state = {
     init: {eng: '', rus: ''},
     isAdd: false

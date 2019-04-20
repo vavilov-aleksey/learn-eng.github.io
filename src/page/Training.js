@@ -1,23 +1,36 @@
-import React, { Component } from 'react';
+import React from 'react';
 import {localStorageKey} from '../data';
 
-export default class Training extends Component {
-  render() {
-    const Data = JSON.parse(localStorage.getItem(localStorageKey));
+const Training = () => {
+  const Data = JSON.parse(localStorage.getItem(localStorageKey));
 
-    return (
-      <div className='translate'>
-        <ul>
-          {Data && Data.map((el, id)=>{
-            return(
-              <li key={id} title=''>
-                {el.eng}
-                <span>{el.rus}</span>
-              </li>
-            )
-          })}
-        </ul>
-      </div>
-    );
-  }
-}
+  const shuffle = (array) => {
+    let cacheLength = array.length;
+
+    for (let i = cacheLength - 1; i > 0; i--) {
+      let j = Math.floor(Math.random() * (i + 1));
+      let temp = array[i];
+      array[i] = array[j];
+      array[j] = temp;
+    }
+  };
+
+  shuffle(Data);
+
+  return(
+    <div className='translate'>
+      <ul>
+        {Data && Data.map((el, id)=>{
+          return(
+            <li key={id} title=''>
+              {el.eng}
+              <span>{el.rus}</span>
+            </li>
+          )
+        })}
+      </ul>
+    </div>
+  )
+};
+
+export default Training;

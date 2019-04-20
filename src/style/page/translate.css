@@ -11,7 +11,8 @@
       color: #FFD600;
       font-size: 20px;
       position: relative;
-      cursor: pointer; }
+      cursor: pointer;
+      text-transform: capitalize; }
       .translate ul li:hover span {
         opacity: 1;
         z-index: 1; }
