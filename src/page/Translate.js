@@ -5,7 +5,6 @@ import {localStorageKey} from "../data";
 
 const Translate = () => {
   const Data = JSON.parse(localStorage.getItem(localStorageKey));
-  console.log(Data)
 
   const shuffle = (array) => {
     if (array) {
