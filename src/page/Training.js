@@ -5,13 +5,15 @@ const Training = () => {
   const Data = JSON.parse(localStorage.getItem(localStorageKey));
 
   const shuffle = (array) => {
-    let cacheLength = array.length;
+    if (array) {
+      let cacheLength = array.length;
 
-    for (let i = cacheLength - 1; i > 0; i--) {
-      let j = Math.floor(Math.random() * (i + 1));
-      let temp = array[i];
-      array[i] = array[j];
-      array[j] = temp;
+      for (let i = cacheLength - 1; i > 0; i--) {
+        let j = Math.floor(Math.random() * (i + 1));
+        let temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+      }
     }
   };
 
